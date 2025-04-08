@@ -1,3 +1,67 @@
 <resources>
     <string name="app_name">30songs</string>
+
+    <!-- Títulos de canciones -->
+    <string name="titulo_fragile">Fragile</string>
+    <string name="titulo_crimen">Crimen</string>
+    <string name="titulo_let_it_be">Let It Be</string>
+    <string name="titulo_bohemian">Bohemian Rhapsody</string>
+    <string name="titulo_un_siglo_sin_ti">Un Siglo Sin Ti</string>
+    <string name="titulo_antologia">Antología</string>
+    <string name="titulo_fuiste_tu">Fuiste Tú</string>
+    <string name="titulo_do_i_wanna_know">Do I Wanna Know?</string>
+    <string name="titulo_yellow">Yellow</string>
+    <string name="titulo_borderline">Borderline</string>
+    <string name="titulo_again">Again</string>
+    <string name="titulo_youll_be_in_my_heart">Youll Be In My Heart</string>
+    <string name="titulo_es_por_ti">Es Por Ti</string>
+    <string name="titulo_stronger">Stronger</string>
+    <string name="titulo_thriller">Thriller</string>
+    <string name="titulo_easy_on_me">Easy On Me</string>
+    <string name="titulo_musica_ligera">De Música Ligera</string>
+    <string name="titulo_ojala">Ojalá</string>
+    <string name="titulo_smells_like">Smells Like Teen Spirit</string>
+    <string name="titulo_creep">Creep</string>
+    <string name="titulo_with_or_without_you">With or Without You</string>
+    <string name="titulo_mr_brightside">Mr. Brightside</string>
+    <string name="titulo_viento">Viento</string>
+    <string name="titulo_mariposa_tecnica">Mariposa Tecknicolor</string>
+    <string name="titulo_frente_a_frente">Frente a Frente</string>
+    <string name="titulo_wish_you_were_here">Wish You Were Here</string>
+    <string name="titulo_hentai">Hentai</string>
+    <string name="titulo_callaita">Callaíta</string>
+    <string name="titulo_levitating">Levitating</string>
+    <string name="titulo_love_story">Love Story</string>
+
+    <!-- Nombres de artistas -->
+    <string name="artista_sting">Sting</string>
+    <string name="artista_cerati">Gustavo Cerati</string>
+    <string name="artista_beatles">The Beatles</string>
+    <string name="artista_queen">Queen</string>
+    <string name="artista_chayanne">Chayanne</string>
+    <string name="artista_shakira">Shakira</string>
+    <string name="artista_arjona">Ricardo Arjona</string>
+    <string name="artista_am">Arctic Monkeys</string>
+    <string name="artista_coldplay">Coldplay</string>
+    <string name="artista_tame_impala">Tame Impala</string>
+    <string name="artista_lenny">Lenny Kravitz</string>
+    <string name="artista_phil">Phil Collins</string>
+    <string name="artista_juanes">Juanes</string>
+    <string name="artista_kanye">Kanye West</string>
+    <string name="artista_mj">Michael Jackson</string>
+    <string name="artista_adele">Adele</string>
+    <string name="artista_sodastereo">Soda Stereo</string>
+    <string name="artista_silvio">Silvio Rodríguez</string>
+    <string name="artista_nirvana">Nirvana</string>
+    <string name="artista_radiohead">Radiohead</string>
+    <string name="artista_u2">U2</string>
+    <string name="artista_killers">The Killers</string>
+    <string name="artista_caifanes">Caifanes</string>
+    <string name="artista_fito">Fito Páez</string>
+    <string name="artista_bunbury">Bunbury</string>
+    <string name="artista_pf">Pink Floyd</string>
+    <string name="artista_rosalia">Rosalía</string>
+    <string name="artista_bad">Bad Bunny</string>
+    <string name="artista_dua">Dua Lipa</string>
+    <string name="artista_taylor">Taylor Swift</string>
 </resources>
