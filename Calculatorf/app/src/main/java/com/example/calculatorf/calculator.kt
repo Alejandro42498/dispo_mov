@@ -13,6 +13,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.runtime.livedata.observeAsState
+
 
 val buttonList = listOf(
     "C", "(", ")", "/",
@@ -23,14 +25,20 @@ val buttonList = listOf(
 )
 
 @Composable
-fun Calculator(modifier: Modifier = Modifier) {
+fun Calculator(modifier: Modifier = Modifier, viewModel: calculatorViewModel) {
+
+    val equationText = viewModel.equationText.observeAsState()
+    val resultText = viewModel.resultText.observeAsState()
+
+
+
     Box(modifier = modifier.padding(16.dp)) {
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.End
         ) {
             Text(
-                text = "987+654",
+                text = equationText.value?: "",
                 style = TextStyle(
                     fontSize = 30.sp,
                     textAlign = TextAlign.End
@@ -41,7 +49,7 @@ fun Calculator(modifier: Modifier = Modifier) {
             )
 
             Text(
-                text = "1641",
+                text = resultText.value?: "",
                 style = TextStyle(
                     fontSize = 50.sp,
                     textAlign = TextAlign.End
@@ -57,7 +65,10 @@ fun Calculator(modifier: Modifier = Modifier) {
                 modifier = Modifier.fillMaxWidth()
             ) {
                 items(buttonList) {
-                    CalculatorButton(btn = it)
+                    CalculatorButton(btn = it, onClick = {
+                        viewModel.onButtonClick(it)
+
+                    })
                 }
             }
         }
@@ -65,7 +76,7 @@ fun Calculator(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun CalculatorButton(btn: String) {
+fun CalculatorButton(btn: String, onClick: () -> Unit) {
     val backgroundColor = when (btn) {
         "C", "AC" -> MaterialTheme.colorScheme.error
         "(", ")", "/", "*", "+", "-", "=" -> MaterialTheme.colorScheme.secondary
@@ -74,7 +85,7 @@ fun CalculatorButton(btn: String) {
 
     Box(modifier = Modifier.padding(8.dp)) {
         FloatingActionButton(
-            onClick = { },
+            onClick = onClick,
             modifier = Modifier.size(80.dp),
             containerColor = backgroundColor
         ) {
