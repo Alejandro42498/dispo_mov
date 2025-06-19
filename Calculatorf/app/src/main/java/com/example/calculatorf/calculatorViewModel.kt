@@ -6,9 +6,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import org.mozilla.javascript.Context
 
-
-
-
 class calculatorViewModel: ViewModel () {
 
     private val _equationText = MutableLiveData("")

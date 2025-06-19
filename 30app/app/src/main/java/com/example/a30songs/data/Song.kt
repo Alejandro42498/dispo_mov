@@ -23,7 +23,7 @@ val canciones = listOf(
     Cancion(R.drawable.tame, R.string.titulo_borderline, R.string.artista_tame_impala),
     Cancion(R.drawable.lenny, R.string.titulo_again, R.string.artista_lenny),
     Cancion(R.drawable.phil, R.string.titulo_youll_be_in_my_heart, R.string.artista_phil),
-    Cancion(R.drawable.sting, R.string.titulo_es_por_ti, R.string.artista_juanes),
+    Cancion(R.drawable.juanes, R.string.titulo_es_por_ti, R.string.artista_juanes),
     Cancion(R.drawable.sting, R.string.titulo_stronger, R.string.artista_kanye),
     Cancion(R.drawable.sting, R.string.titulo_thriller, R.string.artista_mj),
     Cancion(R.drawable.sting, R.string.titulo_easy_on_me, R.string.artista_adele),
